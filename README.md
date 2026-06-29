@@ -33,3 +33,6 @@ Wherein lies a dedicated `README.md` file.
 `src\models\` contains an implementation of
 multi-task regression with a reproducing kernel.
 
+## If there is any issue
+
+Do contact me at `davidson-lova.razafindrakoto@proton.me`.
