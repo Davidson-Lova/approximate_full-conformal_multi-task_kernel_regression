@@ -99,7 +99,9 @@ def run(params_path, result_path):
     new_outputs = []
 
     region_predictors = {lam: [] for lam in params["lams"]}
-    control_levels = np.exp2(np.linspace(np.log2(2 / params["data"]["sample_size"]), np.log2(0.25), 10))
+    control_levels = np.exp2(
+        np.linspace(np.log2(2 / params["data"]["sample_size"]), np.log2(0.25), 10)
+    )
     prediction_regions = {
         lam: {control_level: [] for control_level in control_levels}
         for lam in params["lams"]
