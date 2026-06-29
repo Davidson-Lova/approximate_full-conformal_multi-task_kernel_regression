@@ -1,0 +1,20 @@
+{
+  "solver":"Newton-CG",
+  "loss_name":"log_cosh",
+  "loss_params":{"alpha": 1.0},
+  "kernel":"laplacian",
+  "kernel_max":1,
+  "data":{
+        "input_dimension":2,
+        "output_dimension":2,
+        "covariance_matrix":[[1.0, 0.5], [0.5, 1.0]],
+        "pert":"gaussian",
+        "n_anchors":2
+    },
+  "lam_0s":[1e-2, 2e-1],
+  "lam_decay_rates":[0, 0.5],
+  "min_sample_size":100,
+  "max_sample_size":600,
+  "samples_number":5,
+  "rep_number":20
+}

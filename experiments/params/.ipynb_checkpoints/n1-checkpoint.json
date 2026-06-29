@@ -1,0 +1,32 @@
+{
+    "index":1,
+    "pre_data":{
+        "seed":0,
+        "sample_size":500,
+        "input_dimension":2,
+        "output_dimension":2,
+        "covariance_matrix":[[1.0, 0.5], [0.5, 1.0]],
+        "pert":"gaussian",
+        "n_anchors":1
+    },
+    "data":{
+        "sample_size":500,
+        "input_dimension":2,
+        "output_dimension":2,
+        "covariance_matrix":[[1.0, 0.5], [0.5, 1.0]],
+        "pert":"gaussian",
+        "n_anchors":1
+    },
+    "loss_name":"log_cosh",
+    "loss_params":{"alpha": 1.0},
+    "kernel":"laplacian",
+    "kernel_max":1.0,
+    "solver":"Newton-CG",
+    "lams_number":15,
+    "lam_min":1e-3,
+    "lam_max":5e-1,
+    "rep_number":100,
+    "confidence_control_level":0.1,
+    "regularization_values":[1e-3],
+    "neighbor_numbers":[20]
+}

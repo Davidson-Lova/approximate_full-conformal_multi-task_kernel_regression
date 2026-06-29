@@ -1,0 +1,9 @@
+.venv/
+.vscode/
+.idea/
+/data/archive
+*.pyc
+*.eps
+*.pkl
+*.zip
+*.jpeg

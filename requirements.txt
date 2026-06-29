@@ -1,0 +1,12 @@
+numpy
+matplotlib
+portion
+pandas
+seaborn
+scikit-learn
+tqdm
+black
+black[jupyter]
+isort
+plotly
+jupyterlab
