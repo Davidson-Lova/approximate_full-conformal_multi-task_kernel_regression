@@ -3,8 +3,10 @@ You can run the following command,
 ```sh
 $ python train_predictors.py
 ```
-which computes a set of predictors given the full data set and another set of predictors given the split data set. Each set contains predictors integratting different regularization parameters $\lambda$. It has a correspoding `.json` file in the `\params` folder (for example `n1.json`).
+which computes a set of predictors given the full data set and another set of predictors given the split data set. Each set contains predictors integratting different regularization parameters $\lambda$. It has a correspoding `.json` file in the `params/` folder (for example `n1.json`).
 Its outputs will be contained in `results/train_predictors/n1/`.
+
+> Make sure to create this output folder since it is not currently present in the github repo (since it is empty).
 
 Then, you can use the notebook `best_predictor.ipynb`
 to visualize the results and to choose the best predictor
@@ -21,7 +23,7 @@ to compute an empirical estimation (across 100 repetitions)
 of the coverage probability of the StableCP-region
 across a range of values control levels $\alpha$
 and for some regularization values $\lambda$.
-It has a correspoding `.json` file in the `\params` folder.
+It has a correspoding `.json` file in the `params/` folder.
 Its outputs will be contained in `results/evaluate_coverage/fixed/`.
 
 
@@ -42,7 +44,7 @@ $ python evaluate_consistency_fixed.py
 ```
 to computes the empirical upper-bound on the thickness
 across a range of sample-sizes for a fixed regularization parameter $\lambda$ (and then, for $\lambda \propto \frac{1}{\sqrt{n}}$).
-It has a correspoding `.json` file in the `\params` folder.
+It has a correspoding `.json` file in the `params/` folder.
 Its outputs will be contained in `results/evaluate_consistency/fixed/`.
 
 Then, you can use the notebook `evaluate_consistency_fixed.ipynb` to visualize the results.
@@ -59,7 +61,7 @@ You can run the following command,
 ```sh
 $ python compute_prediction_regions_fixed.py
 ```
-to compute, across 100 repetitions, the StableCP-region, the SplitCP-region and the OracleCP-region. It has a correspoding `.json` file in the `\params` folder (for example `n1.json`).
+to compute, across 100 repetitions, the StableCP-region, the SplitCP-region and the OracleCP-region. It has a correspoding `.json` file in the `params/` folder (for example `n1.json`).
 
 Then, you can use the notebook `compare_cp_fixed.ipynb` to visualize the results.
 
