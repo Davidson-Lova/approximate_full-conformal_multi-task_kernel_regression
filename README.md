@@ -10,7 +10,7 @@ to create a virtual environment
 and then activate said environment
 using
 ```sh
-$ .venv/Script/activate
+$ .venv/Scripts/activate
 ```
 if you are on windows.
 (Its different if you are on mac or linux so do check the relevant documentation.)
